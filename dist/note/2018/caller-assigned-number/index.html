@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Website with notes and incidents - Website with notes and incidents</title><meta name="gridsome:hash" content="9aa6fc4199609a4def2827be26b3f097c6fcb218"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.7"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="ssr" name="charset" content="utf-8"><meta data-vue-tag="ssr" name="viewport" content="width=device-width, initial-scale=1"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.ce0531f.9bb7ffa.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.ac8d93a.9bb7ffa.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.b9532cc.9bb7ffa.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.f22e9f3.9bb7ffa.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.62d22cb.9bb7ffa.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.1539b60.9bb7ffa.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.dc0cdc5.9bb7ffa.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.7b22250.9bb7ffa.png"><link data-vue-tag="ssr" rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"><link data-vue-tag="ssr" rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript><link rel="preload" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/css/0.styles.e8886194.css" as="style"><link rel="preload" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/app.2dcaf968.js" as="script"><link rel="preload" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-templates-note-vue.fc9d622f.js" as="script"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--node-modules-gridsome-app-pages-404-vue.c60987c2.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-pages-about-vue.ae83cabe.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-pages-index-vue.22c891ea.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-pages-knows-vue.cb69def7.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-pages-notes-vue.bec516e2.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-pages-snows-vue.ed9a33ec.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-templates-know-vue.18621638.js"><link rel="prefetch" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-templates-snow-vue.c8b82658.js"><link rel="stylesheet" href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/css/0.styles.e8886194.css">
+  </head>
+  <body >
+    <div data-server-rendered="true" id="app" class="layout"><div id="wrapper"><div class="pure-g"><div id="header"><img alt="Example image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 135 135' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-0'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-0)' width='135' height='135' xlink:href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAYFUlEQVR42tWaCXAU55XHWzOyN9nNVk4DM4NBB0jckHirktQmG26QxCkhQCCMTsRtTjtrkLp1C4ID5j6k6R6diCNONk6tDQaZG11IIIEw2MSOQ7ZsKhsndmqtOfrb//u%2b7pnRYUMSG%2bOpetWj65v%2b/97/ve9oSdI/%2bJp7xSXNvVwm3jdrIYlNmjWxoaLL78yq1/5l5iV19IwLauL0C%2bp/xp1TKxGXY86qb089o96d8rqzYlKd88fm70885Qyh6/jXnNIj%2b5rfoklJzeX8fVKLK2R%2bs2YN/nlCgzoyvl7dOPuy%2bptZl9S7sy5rLL71MIu/doTNulLDpl2uZLEXXCzmnMZi62tYzOVqBuEVMS8f7QJh7EvqoyV8YYtKgvn7Ba0avQ/1u6FZ/Q4csGpOo1af0Kix%2bR1HWWLbYTa7qYLNvKjqyL5n2nnVjex7Ys%2bq3pgzqg/Z1yfXOT2TTjvdsS3H2YRTzsMcwGlnCN5LY08%2bIi5IaXFKyVddARCtLn/GAcE2/4q2DSXwp4VvHGHz2mpYQr2mx19W3bMuqx7Y3zdDANABQI89p%2bqwvz71jFM3AOgAoENw55TLh9n4k84ZvAROOq2PhPhFV1Vp0TUh/ulrrpCF14T4BS2ux5NatFyI/2jR7aNsXks5S2zU3AkNmjceAGB/HfbXKfszDPFxBADikX196usCAOpfn0gAXnO6J1%2bqYeNOOmsFgDLr2Fe/YAcshvBFbX7xFvP7yVe1qSiBOyl3jrGk1nI2r1lzw/4%2b2F8HAN0EgOzrM4IBnDMBdM0%2bap4AeCeerWRjTzgb6TMmvXZAwvsv0PbtLulpU3xboNZRCjsX3zrMFt2oZsh%2b57wrmm9uk6YDgM4BmNkPAjA9CEB3%2b08U9tfHE4BzVQTgojELhHxhALj49q7ice2LUqhPf%2bc4W9Dq8qL2vQCgI/s6BwDxc4Ky38P%2b5wL2n/K6KrJfZ2SfAJx0uiddOkwA9vIZ4ITTOvZE6RcgHjW/%2bIaY4ha3C/GLr2nDAOC9tDtH2MKrrk7YX0f96yYAf/Z7sf/0bgCmcgA97Y/a18fXlbOfvOr8rgHA8tDFp153SamG%2bJTrhvh2179B/Eept2oY7N8JAGxBiwDAs28CaBAAZgNAb/Y3ur8PADwA4AYAN01/yL5nQp3GpjQeo%2bxv4uKNGWDsybKHKL69vId4lMIIAPhr6q1qBvu7k0l8q6tL9k37J3yy/T3IvpuyH3exnMU1VLO4psMstqmWxTTWsino/Kj3P4474cyiz5xQVyaN/e8y6ak/n3n42TeuVuNqB4h7aberGRzgBgCyvx4MYG6v9tc4AGTfTdmf1VzNZrUeYXFY%2bSH77yL7dci%2bE9kvgP2fg/0TYf9v8MZ3uizkJ6%2bIxjf21YeY/fSbQnzaDRdfgi5/s8YCAK2Zv60V4ttcZH8dCyCd6t%2bf/eZuzU/Y301L34S2IwwAGBxwFvbfEHvW%2bdTUOuc/f9I9AIL1xy%2bb4h9y94dwkf0b5SL7N1xlS%2b8eZ7B/JwDoyL6efFWI783%2bAMAAwIvsexPba2np2wkH7Jt%2bQRvZ/bPQB0LgACscYIUDQuEAK2YADn7Caac07mFmnme/w5/9UOM6N%2bvdowz29wCAbgJY2A1AkP0Z7O%2be01zB5lyF3S%2bpVQAQYY4//bwagh4QCgdYsPqTJkPk5NdVCQCkp4zNzthXvsBNT9LvqqR0w/oZN1zfAID3029VMTRA7%2bKg7HP7k/iWLtlnyL57Xjs2PfXaPYifbo6LBhiKErBAuAlCQiN8tHZ36R2i66d1iMYHN%2bwh6yP7ncg%2b62r/Xru/O6njCOyv1s%2b%2bpPbh%2b/9LaigcwOfwWefLpJmXNOmRfkG0RTTC8uEIhvrXAUA37Z/M7a/1Zn8uHnv/X5tjYQr0L5nRDAnGoy0%2bo10Nzn7l0t8fZej%2b7uDaF/bXgu3PkH33go5asv8pcyw0QatxffSFB5UAz37GzfJoAPBhFiD7%2b7oDENl3mfb3JLVV09b39pxG11fFCZAQj6s0%2b%2bKXRLwhPNS4liz7w3Gyv7un/XvUP4P92ZxGdTT9LWaBUFP8nPovkXjzlfmG6yvI/tsZb1aT/b097U/d38j%2bFc2dfOsoAcimv4ULHjMgSPFNX0LxPPsdrpisd2op%2b97g7AfZnxnZ9y5or6L6vz27SZROYrMmzUPW0QukL%2b0LfWD3srvHPsX%2b/u7vSb51hACk80PQJmH9OU0PX/y0umoewe%2bnnUZcQDQhGqulOFxn4ZrUVCXNa6iW4s8e47%2bfeLG2B4CrmXdqerf/VbH4Sbqi%2bZLaKkn8O4mN6j8ZAHg86GtSnVNijEk/OXEIK0FnSMwZ1YIVopUWS%2basMf2CE7OI6xPHGHta9T8vGHdKlbCVDsFy2oqxrdhkWTGmFYstK42LPQiNbcWaxIrxrZiiLbONHoX30uxGlds/HAA%2bTuvg3V/vufT1Nz83HXxC8DbjIYjIfvP9635ynVj2muf9U%2bp6P%2b1NqFf930dv6fFz/C1CfB6EW6acFvuHv/VFD2%2bSr6v%2bRVBs1ttG/bcH2f9qkP2vcABwQBU1vx8Z2bckPmDTM8Xjaglyw7emnnGOQ6bisEQeHXRzloyr4hhs/pXA%2bBMxxgTjGQHE%2b0FhIxUFMFMxXiw2WDEYMxabrdi4c85YOCAWDoiFA2LggFhk/bvff%2b0Qhza/2WWhhzsEYC2vfyx%2bUoR4OvigrS9D96eTH8bFX4P9m7U/QPTXDAc8kP0ndxM//oTzcdzoTmyK/kRPh2Y2VTEslRlWjW0J9VqsGBsr08nLpcUdlVJKq/iMSaf8DrIK4eoYgHgdX/umXqxkMZerWBxiWkMVm9FYxcelc4j4K1UsoaWazWmtZglN5bRpuwl3JQnAGt8DVGT97kgvO78uS1/vwpuHyf581TfviisksfHBp7yJhlXHn3J%2bFSDqp189xmLPa3RO4MWGyYvs%2bBKxi0zCyhJglxqfYRVH8Zof4oRTZVbDAZMmnlZZTH0No3NF1L435ozTS0%2bb4CjvdGNcZJ7GxhZd9dKzCkzVvvnXqtiit44xTOeF5hb4WsZtvvPzBdnfOPnxT39m999v2N9KDrjfayrVPmoWN2kxXKCSeFj0/3CjPjouo5MjOkjBzbkxJlvQVgHnad8zHr1Zuj8wxbUvgH4w9XwFg/BOOl6nY3Y6cKVzRzqBonNIGpeO5mhsOqmiMwvavNEqlvTQ8wz0t3g6%2bLiXdrOCBWXfsL/G7Z8kVn7uZDRADJJr1GnogzpgspF9iB%2bM5uejI3G62el%2b8So/TqObo2cMqXeOsuRrWhV//HbVZV3Y6pS%2b91IpjRNqjKPENR9hKKFOjMWw1faLJ6AzA%2bJpk4axVbpvSh6VMjkawgHgVg2VeqPEa/%2b6ywTgr38j%2b/RHTAA4hoHU50SHDuz4Pu01BQ6gqYm/f92ZOr25ltHhKImnE%2bPZRnYM8eQ43%2bKOKtqCv5Vxvfxx8/kEHMRPkYxx6uhQNeas0xucdRI%2b0591Ei/OKoyscx2UUNrUUYN/ur0cn6P9lRzw5xRsgEwAyeLgk%2bzBARjnfgYA7aemA6JfLHygEsCNcwBTz6jrZrbUMtSnh26WDk75TQbE0435UjoqqB%2b9l36j/FvGwSzWC05p9R3xPwd43zK9oZJAentk3QBKJ1SJQjiNzYysc13U38jpKdcx7bdrHimxvvR/0t6oJBrm4ifY/szc%2bi7E%2bj%2bm7mCeufn59hblAVZrqoTpiAOIO%2btMnt16mM4K3ZQlUzzdJPUZnpU2lzf9djVDX3oj641Ki%2bhR5VLsOVWCWP41hL9K/19Aj9pndql1GlM1a52Z4rGH4cKTr2qkkSeaZjta9yxuc%2brSD49vb8h8i%2bpB8wWOvf32N09%2bPPOu17Khzq0H6CZ%2b/PJu6xNbch%2boB2Blx6077bxzAJpT5%2bzL/PzQRzdqil8oxFMj7lx29zhLv%2bk6YKxRrEuM80pa0RnXtQntRwnkx1TnQrg4liegcwNZN13Fy5rGpxMuOAqh6VlvVrH4C7t0ybFDURNayvGhFR6qD37wQas/85FXo6ovvFbhGX%2b6jH27OOcVugnHjnxL35/d3wGxcMCS9lpadlqNE6IXFrz5ErbR2scY22uKX9TGZ6BOmo3Sb5Z7ACDCOKrnWceyWZp1UfSAmefUryLrbydeqyHxH88xYM4NWF4P1LrG7U7CaZVrisfWnwMYUbq%2bU%2bqzLXt9VMULbF6T05N6o4ITM5vf/CvkiHIWd%2baQr/%2beItZnq/LW4INbeHPqAwC2n98fwtdrd2CJa06ZeVQ%2bv3r6t79gC7GrNGuSetDSd4%2byzFuVlP1Z4nxCrAOwVJemnfOv3y3GdSSy/seF6Ev0PwlGkzM6vHh%2bYWY9RWRdR1kxEr4UwpfcrtR/cCSHPZG3%2bEMpbE/uLMe%2bQha%2bL88z4dXdIOnkDqAB4y%2bX6T/6r526Y0eu3nebzCAYV2UY3US/FxSLfcf9Acy8IG5%2bToPqX7dj7LWw55u4SV/KjQpahn8Iu/8aMcY4mzROqQKbohnGOPHGfgFZtyHrpRD/HgmnRJluMuyuc%2bEd5Tr2Olx8SrvKZp7doQ8/uM7XpzCV2Usy7kpP7lKGDNit%2bBw7Zdbv5zm%2bsL15%2bpCyIj26tEgfsDsPgnN0%2b3ZFh1i3Y/8WZtuuLKMbAIzQB10Jxhs7sIQgCIuulIWi70QjQ99Nu6H1CzyhEg9mnn7vIq1S/WPQbtHcycUHbZqSWtSvz29Wh2e%2bWRs14eVtkwbvXPdx1K51LGrXGj1q9zN61B6K1Xo0Inz7Mr1PQYreJz/F03/7UmYrTj8vhe/NfRwA7gzcn88IRP%2bdMsTm8HC8KOtP7lRwRexQPP33FTPAOEkf3P9FxfIEysCx8/4uQPbpH6jEeyyg4IAeu0FkyhI4na6E9XuuNBMaXJK5AEPt83/JC/75tzenp9i2rGR98zLcffPS9b75aXrfglR/9CtM1ZF1CrdjxzICsIv/4cA9ytFwZzEbsEfxIJB5EXAHB9DfCIBgPHaIMsDVEr1XJhc92AOYFpX%2bzUb8kxV2YnCABQ6woARCTMH0iC6j49NXmfMNmON%2bvU2KPbUzZOrJFzk4e8GyVsfWlcxelOW1Fy3R7cWZiAxDdLqI4nQdwj0O7oC0RD5Q2F55SYRWwsL2Kh7A0AcGQegGwj3gUAlD9vk0ha95GTwogM/yZctfzq/2/GWhhviZjq2rma0gy2srXKLbijJ5kODggHiffUsGZf8v/YrT7HyQ8H1yOKIzfL/CwvYpOkDoA/cKEF1g7OIwGGB4IT7KgMDpD9gtPzzxuSskh7ICEHg7kvo%2btyIEIG7YS1Z2A5BBgrtDMLKfLh7mROyXuYCIA8orkVoRAwRPOEEwQIQFgxAwPGGlxQwg%2bABhexRrv%2b0yIOZKA3d//k6w5a2S7ADAs563/DHhguWyY9taiF/qsRdk6fcHwOufnwlIkQcU3kgiDypJgyuKGUB4AEWP2K/o4RS9w/CElRVT08w0eshjRikhPj8INmUVsr/SEL/iMQFkxY/shaj7/GW6vWCpbvsUANz%2bP8tkeP872P8rfKBBh8QNRx6SH8f7O4PUfAYYXoDRIyi6gxAwfGH7chmE%2bxDfE%2bIFBPyuFPY5OMGurIb4VeJ97spQ42oHgPftRasIgBcOYLbCrgC4%2bJJ0E4Tb8eJyyv5mDq84PdSEwN8MLpXXRtdsYfjaPeigQiB0ioieMKhXeMIP5VPjfB8QnuQQ9gkIfhCq8hkIX4PMPyM58laaLhCZV1Z/DQCuO0rWQPxyN5og4w4AALsJoLiLA3z2rZkk/l6/kvRvGABCyPrS4DLRwKLKlK8AwjtRWj7D1QsQOkXkQZmD6OYK3i8iygoJxu8RUUK4/BgAhRj9hXrL3y9eXivZ5DVCOK5wgaj53FV2xA1HCeo%2bb7kbMwLqfxnsLwDYugFAkHB3f579tGe6ZD/SKIGoMpn3gminnDL0cAnD1%2b6oUgUgFJ1i0CFZH3SwBwwGGJ7IsgIspZUPEZPNm8f3QyP3i7Ej9gHEoQcH0S9nLRfPxeasg/i1oYE%2bsPo/4IJ7jmISvwLiV5ADdAIgHLCEh71IrAFs5rz/QhbVfqt/nOJ0yVaSLr6AQGmIJkvRpSJzgHBqaE0xi3ICQpkCGAKCAGGECQKlQo0z8lAeiyjNJ1cUYzbgMAeVbiYXhOLnIRH7FMDOgUNyuSsi9wWAPCk/L9k2bZRs2RukPtlrpX6b8X7zhhB79nq/8L4566w2%2bZkCex4sX7CGoRm6AYAcoJsN0D8DFPZogGbz%2b6Eh3mpCEADKxM0MUcWUiGvkEFXpHKLlMsDwIXQ4QhcgZAHjUDAM3i%2b8EQcV3%2bCKEnLFTcTc4KxGHpAt5AqEFWsOC5UJxcCdOSH9C34aYt%2b80YKwIkIdmzZ0eeABB8yzy2tuOUqeYygDHQ7wAgA5QBcAljMTAOqfBc8AiE6j8cnB1kcpdLUdRJoQ%2bC8M1eTU4UdKGEB48D2dIHAQTsWAIfcKAyDcg9QCNqicT6ktEJyF6Pc3T3nZGyJs2evXowSuO4ogPH8DxD/j5gByVyFW6iYAm%2bmArjMA4%2bLFmv8EX7QVpfOs9y/MhP27ARjiVKQodO0fVGRLQ1zCwkNd8p4Rx7ewoRrcoCoEQ4/mMBQeJohAicgmCC9AeAZrhWxwZQmB%2bAsgvIrYhIiDA0aiaToQTwzYkW235zw7uN%2bGdd%2b3Pb9hARzwM9j/AgC4HUWbmD3vWQYHeOAALwAg%2b90A5AeVQAAARGPD8wJf8b2Frv%2bvRva5w/213/01TBOlMMwl%2by04rFz%2bzUiC4JI74QodMHQCISIYhojBXfsFzSSeQaW5bHB5EYcxCKtNYxb5CCXwQfhe%2bcOwXTnuAT/PYf2LNjNHASLveQYAiHVuOMALADoA6CYAezcA5ACbAQCbIGyGMt2ObVz8%2b7B6WPe671ec8snWG6bJJgROK0rdbB1eLp8bdbyEAUbnMJeiD6UgEJqAwEGoZokY5RHULwDBx0EclN2YRcgdLPJQLo%2bIg4gDuSz8QK4vbI/sceQ957Zt2uC1Z2/wAYAOALoJAOsB3V8CeSsN%2bwcAYArEQmgJxGNNUJzxR3tJGp%2ba7UbdY0H06eK5cFWGeMXMvkVAyQ0dXiHXjXppC0FwI3wABBDCEcEwoj%2bxX/Q6i/gCawuZXwGB2XM26rbN63U7B0DiAw4IAFjhB2D3T4FZnY4XVpAD7iLTg3jGizJCDQjSE/mpD9aARgAARPL3EO5/PDWiUq4Y/cstDN/TEZ5h5QoB0YNhDAkqEbM8oruCYAYIFphBZDGdAgLWJWzA1ud12yaRfQFgTQBALw0Q2ccyOAubnNUQv6QBAL4jRBviizIk%2b9a0v60LU1McXiGcMCIIwshK%2bdmRh/PZqCMFBKLTgKELEIoeKBE5CEaXxsmMfsEMGMyAwUHQNXxXNneAjewPALYg%2b3cHgAbothctZ45tq8j%2b%2b/2ryKJMq3GVHCWpf99SFDdP4k0IIcMrxd5/ZJX874jbY361hY2oVBCy2wQxvNyEIftBdGucTMAgEByGHwRNp3SN3JcD%2bxsAZAHAHgQAewAdu0EPAXBsW0Pb4PfhgAT/FFq4xGKK75ef8Y9tRkbABRBoZp/ec1uNPpzzGCBsQfjGvFRMEHQCgd/3dXFFufJpJcI4CBNGKb3HWmJvNmaA9YEGqPgB%2bADADQf4HFvXMtoGowT22/KXfpMLLsyyQnyIAQH1v%2bSz246S%2bGFV4mkQRPsPI0dVy9GII6MO57IxvyxhI2tyuSPgDA8g%2bLq7AsGEK2Q2hEKl4CB4j4jWUALbAz0AJeBD/XsAwGPPe4Y5tmBBVIBaz1vxKzTAp/yWL1ga2C8ULMV0l/XZH0iMqlZIvAkhZGS17P/Q0dXyaIA4iPiAQIz%2bRZEBQ/EaJUJAvMNpBunSOEXw6VRTaNntdeRu9Ng2r3OjBLz23PXMUfwsYiMtg/8XDjhoz1sZEJ6/zIqNUIhxLijBDZ//mRxBGH0013SABSD8TXJ0jfIEvpeBeAW/98GY40XMDwSNc0RNHhtRlcvQT9iwCppF6Iqvq/LYsMp8NnBbNrL7PATTKnAjVoFr7mET9BIc8DQWQd8JHI2tsMAB/HMH5iHj%2bSse7qnsmBqFxPudQSAQXc7p4Yq%2bo6rkafh%2bIWC8jLiOuAdHfIj4GI4gZ3TCER9FHcj%2b05MFz72L5XADGmA11gA/xRQ4Dvb/ZpczgtxVVjjA8mShcSqct1Lqn7/y79bx//PqSP6Mi62SAAAAAElFTkSuQmCC' /%3e%3c/svg%3e" width="135" data-src="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.9dd3765.9bb7ffa.png" data-srcset="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.9dd3765.9bb7ffa.png 135w" data-sizes="(max-width: 135px) 100vw, 135px" class="logoimage g-image g-image--lazy g-image--loading"><noscript><img src="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/static/favicon.9dd3765.9bb7ffa.png" class="logoimage g-image g-image--loaded" width="135" alt="Example image"></noscript><div id="navlinks"><strong><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/" class="active">Website with notes and incidents</a></strong><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/notes/" class="nav__link">Notes</a><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/knows/" class="nav__link">Articles</a><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/snows/" class="nav__link">Incidents</a><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/about/" class="nav__link">About</a></div></div></div><div id="leftnav"><div id="embeddednav"><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2018/enterprise-udfordringer-beskeder-caller/">Eniig Enterprise IMPL0001452 - Udfordringer med beskeder ud til Caller</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2019/bulma-versus-bootstrap/">Bulma versus Bootstrap</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2018/member-email-unavailable-warning/">Fitness World - Case - Member email unavailable warning</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2019/rettelse-request-counter/">PROJT0001565 - rettelse til request counter</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2018/case-basis-setup-csm/">Case Basis setup CSM 1</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2018/angular-paa-platformen/">Angular på platformen</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2018/caller-assigned-number/" class="active--exact active">Caller, Assigned to og Number er tomme i mail</a></p><p><a href="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/note/2018/delta-tests-madrid/">Delta tests om Madrid</a></p><div id="pager"><!----></div></div></div><div id="content"><h1>Caller, Assigned to og Number er tomme i mail</h1><p class="byline">
+      year
+      <span>2018</span></p><div><p>LP: <a href="https://app.liquidplanner.com/space/143625/my_work/panel/45710728" target="_blank" rel="nofollow noopener noreferrer">https://app.liquidplanner.com/space/143625/my_work/panel/45710728</a></p>
+<p>Caller, Assigned to og Number skal være udfyldt i mail-templaten <a href="https://scandlinestest.service-now.com/nav_to.do?uri=%2Fsysevent_email_action.do%3Fsys_id%3D0a9fe2f7dbb453008772969adb961994%26sysparm_view%3Dadvanced%26sysparm_record_target%3Dsysevent_email_action%26sysparm_view_forced%3Dtrue" target="_blank" rel="nofollow noopener noreferrer">SLA breached Incident</a>:</p>
+<h5 id="fra-lp"><a href="#fra-lp" aria-hidden="true"><span class="icon icon-link"></span></a>Fra LP</h5>
+<p>User Story:
+As an itil-role user*, I want to receive notifications of Incident SLA breaches when it's actually breached, so that I know exactly when an Incident is due resolution.</p>
+<p>Acceptance Criteria:
+100% SLA breach of Incidents are being notfied to Ole Rasmussen via "SLA breached Incident"</p>
+<p>Resourcer:</p>
+<ul>
+<li>Notifications, som er ansvarlig for adviseringenslogik vedr. SLA. Se specifikt "SLA breached Incident", som er Oles fokus</li>
+<li>Default SLA Workflow, som irammesætter sekvensen af notificaitons
+<a href="https://scandlinestest.service-now.com/workflow_ide.do?sysparm_nostack=true" target="_blank" rel="nofollow noopener noreferrer">https://scandlinestest.service-now.com/workflow_ide.do?sysparm_nostack=true</a></li>
+</ul>
+<p>*Indtil videre skal modtageren af denne notification hard-codes til Ole Rasmussen selv.</p>
+<p>**"As a <role>, I want <goal or need>, so that <benefit>."</p>
+<h5 id="historik"><a href="#historik" aria-hidden="true"><span class="icon icon-link"></span></a>Historik</h5>
+<p>From 	Kim Hougaard Simonsen (khs@syspeople.dk)
+To 	45710728-605453f1cd06dddd0b53286d2a9f6cea@in.liquidplanner.com
+Subject 	FW: ! SLA: Assign. to: , No. Caller:</p>
+<p>FW</p>
+<p>Venlig hilsen / Best regards</p>
+<p>Kim Hougaard Simonsen</p>
+<p>Solution Architect</p>
+<p>Tel: +45 27 57 88 60</p>
+<p>From: Kim Hougaard Simonsen
+Sent: 12. juni 2018 10:50
+To: 'Rasmussen, Ole' <a href="mailto:Ole.Rasmussen@scandlines.com" target="_blank" rel="nofollow noopener noreferrer">Ole.Rasmussen@scandlines.com</a>
+Subject: RE: ! SLA: Assign. to: , No. Caller:</p>
+<p>Hej Ole,</p>
+<p>Jeg har ordnet problemet med den fejlbehæftede notification i anledning af SLA breaches. Det jeg har gjort er at skifte table til task_sla inden jeg rettede dot-walk til root-tabellen task , samt erstattet det ene mail script med dot-walked funktioner.</p>
+<p>Vil du verificere i <a href="https://scandlinestest.service-now.com/" target="_blank" rel="nofollow noopener noreferrer">https://scandlinestest.service-now.com/</a> og kvittere med positiv/negativ resultat? =)</p>
+<p>Update Set: Scandlines - "Caller", "Assigned to" og "Number" er tomme i mail</p>
+<p>*Update Set er oprettet og completed i Sub-Production (<a href="https://scandlinestest.service-now.com/" target="_blank" rel="nofollow noopener noreferrer">https://scandlinestest.service-now.com/</a>)</p>
+<p>Efter rettelsen:</p>
+<p>Caller: ${task.caller_id}</p>
+<p>Number: ${task.number}</p>
+<p>Assigned to: ${task.assigned_to}</p>
+<p>Header: ${task.short_description}</p>
+<p>Category: ${task.category}</p>
+<p>Severity: ${task.severity}</p>
+<p>Priority: ${task.priority}</p>
+<p>Comments: ${task.comments}</p>
+<p>${mail_script:incident_take_me_to_the_incident}</p>
+<p>Før rettelsen:</p>
+<p>Caller: ${incident.caller_id}</p>
+<p>Number: ${incident.number}</p>
+<p>Assigned to: ${incident.assigned_to}</p>
+<p>Header: ${mail_script:incident_body_header}</p>
+<p>${mail_script:incident_additional_details}</p>
+<p>${mail_script:incident_take_me_to_the_incident}</p>
+<p>Venlig hilsen / Best regards</p>
+<p>Kim Hougaard Simonsen</p>
+<p>Solution Architect</p>
+<p>Tel: +45 27 57 88 60</p>
+<p>From: Rasmussen, Ole <a href="mailto:Ole.Rasmussen@scandlines.com" target="_blank" rel="nofollow noopener noreferrer">Ole.Rasmussen@scandlines.com</a>
+Sent: 10. juni 2018 00:26
+To: Kim Hougaard Simonsen <a href="mailto:khs@syspeople.dk" target="_blank" rel="nofollow noopener noreferrer">khs@syspeople.dk</a>
+Subject: Fwd: ! SLA: Assign. to: , No. Caller:</p>
+<p>Sendt fra min iPad</p>
+<p>Start på videresendt besked:</p>
+<pre><code>Fra: IT Service Desk &#x3C;scandlines@service-now.com>
+Dato: 10. juni 2018 kl. 00.07.09 CEST
+Til: &#x3C;Ole.Rasmussen@scandlines.com>
+Emne: ! SLA: Assign. to: , No.  Caller:
+Svar til: IT Service Desk &#x3C;scandlines@service-now.com>
+
+Caller:
+Number:
+Assigned to:
+Header:
+
+-
+
+Additional Details:
+
+Caller:
+
+category:
+
+Severity:
+
+Priority:
+
+Comments:
+
+You can view all the details of the incident by following the link below:
+
+Take me to the Incident
+
+Thank you.
+
+Best regards
+IT HelpDesk
+
+Ref:MSG0128923
+</code></pre>
+<p>SReply AllSReply
+Unassigned
+Unassigned
+Fri 08/06/18 07:45 AM
+From 	Testmails (testmails@syspeople.dk)
+To 	45710728-605453f1cd06dddd0b53286d2a9f6cea@in.liquidplanner.com
+Subject 	FW: !!! SLA breach warning. Incident Assigned to: Kim 'itil' Hougaard simonsen for INC0014648. Caller: Berit Schreiner Dobson</p>
+<p>FW</p>
+<p>Venlig hilsen / Best regards</p>
+<p>Kim Hougaard Simonsen</p>
+<p>Solution Architect</p>
+<p>Tel: +45 27 57 88 60</p>
+<p>From: IT Service Desk <a href="mailto:scandlinestest@service-now.com" target="_blank" rel="nofollow noopener noreferrer">scandlinestest@service-now.com</a>
+Sent: 8. juni 2018 07:43
+To: Testmails <a href="mailto:testmails@syspeople.dk" target="_blank" rel="nofollow noopener noreferrer">testmails@syspeople.dk</a>
+Subject: !!! SLA breach warning. Incident Assigned to: Kim 'itil' Hougaard simonsen for INC0014648. Caller: Berit Schreiner Dobson</p>
+<p>Caller: Berit Schreiner Dobson
+Number: INC0014648
+Assigned to: Kim 'itil' Hougaard simonsen
+Header:</p>
+<p>INC0014648 - SS-512 :Confirmation/Tickets and flex level</p>
+<p>Additional Details:</p>
+<p>Caller: Berit Schreiner Dobson</p>
+<p>category: Inquiry / Help</p>
+<p>Severity: 3 - Low</p>
+<p>Priority: 1 - Critical</p>
+<p>Comments:</p>
+<p>2017-12-02 09:40:49 CET - Jutta Just Additional comments</p>
+<p>We removed some time ago the Flexibility level description from the confirmations and the tickets if an offercode was available.</p>
+<p>Our sales department requires now that for all
+passenger vehicle products (car, carl, mhome, mhomel) the offercode AND the flexibility level shall be printed on the ticket.</p>
+<p>You can view all the details of the incident by following the link below:</p>
+<p>Take me to the Incident</p>
+<p>Thank you.</p>
+<p>Best regards
+IT HelpDesk</p>
+<p>Ref:MSG0105690
+SReply AllSReply
+KHS
+KHS
+Thu 07/06/18 04:27 PM
+Kan ske at være så simpelt som "Send to event creator", som er unchecked af ren uvidenhed.
+SReply AllSReply
+SNotes
+Edit
+Last edited by TUH on Tue 22/05/18 02:20 PM
+From 	Tim Unnerup Husum (tuh@syspeople.dk)
+To 	22516647-605453f1cd06dddd0b53286d2a9f6cea@in.liquidplanner.com
+Subject 	Scandlines - ”Caller”, ”Assigned to” og ”Number” er tomme i mail</p>
+<p>From: Rasmussen, Ole <a href="mailto:Ole.Rasmussen@scandlines.com" target="_blank" rel="nofollow noopener noreferrer">Ole.Rasmussen@scandlines.com</a>
+Sent: Friday, May 18, 2018 2:36 PM
+To: Tim Unnerup Husum <a href="mailto:tuh@syspeople.dk" target="_blank" rel="nofollow noopener noreferrer">tuh@syspeople.dk</a>
+Cc: Mikkel Leth-Nissen <a href="mailto:mln@syspeople.dk" target="_blank" rel="nofollow noopener noreferrer">mln@syspeople.dk</a>
+Subject: RE: Projektopstart</p>
+<p>Hej Tim,</p>
+<p>Det lyder super!</p>
+<p>Mikkel snakkede om, I godt ville prøve en lille "challenge", som jeg ikke har fået tilfredsstillende svar på fra vore nuværende leverandør…:-)</p>
+<p>Sagen er, at denne:</p>
+<p><a href="https://scandlines.service-now.com/nav_to.do?uri=%2Fsysevent_email_action.do%3Fsys_id%3D0a9fe2f7dbb453008772969adb961994%26sysparm_record_list%3Dactive%253dtrue%255ename%253e%253dsla%255eORDERBYname%26sysparm_record_row%3D2%26sysparm_record_rows%3D22%26sysparm_record_target%3Dsysevent_email_action%26sysparm_view%3Dadvanced%26sysparm_view_forced%3Dtrue" target="_blank" rel="nofollow noopener noreferrer">https://scandlines.service-now.com/nav_to.do?uri=%2Fsysevent_email_action.do%3Fsys_id%3D0a9fe2f7dbb453008772969adb961994%26sysparm_record_list%3Dactive%253dtrue%255ename%253e%253dsla%255eORDERBYname%26sysparm_record_row%3D2%26sysparm_record_rows%3D22%26sysparm_record_target%3Dsysevent_email_action%26sysparm_view%3Dadvanced%26sysparm_view_forced%3Dtrue</a></p>
+<p>…notifikation, "SLA breached Incidents" som jeg har tilrettet lidt ud fra "default-notifikationen" "SLA Breached" ikke virker. Den virker fint i preview – men IKKE i den mail, der sendes til mig – felter som "Caller", "Assigned to" og "Number" er tomme i mailen:</p>
+<p>På forhånd tak!</p>
+<p>Med venlig hilsen / Best regards</p>
+<p>Ole Rasmussen
+IT Incident Manager</p>
+<p>Scandlines Danmark ApS
+Mobile:+45 72 68 69 74</p>
+<p><a href="http://intranet/Danish/Vaerktoejer/Teknisk-support/~/media/19F6C9B3465E4759ADFA4F992715A022.ashx?h=67&#x26;w=189&#x26;as=1" target="_blank" rel="nofollow noopener noreferrer">http://intranet/Danish/Vaerktoejer/Teknisk-support/~/media/19F6C9B3465E4759ADFA4F992715A022.ashx?h=67&#x26;w=189&#x26;as=1</a> </p>
+<p>Main office: Scandlines Danmark ApS, Havneholmen 25, 8. sal, DK-1561 København V
+CVR: 18605600 København
+Management: Søren Poulsgaard Jensen, Per Johannesen Madsen</p>
+<p>Chairman: Frank Rossen</p>
+<p>From: Tim Unnerup Husum [mailto:tuh@syspeople.dk]
+Sent: 17. maj 2018 12:08
+To: Rasmussen, Ole <a href="mailto:Ole.Rasmussen@scandlines.com" target="_blank" rel="nofollow noopener noreferrer">Ole.Rasmussen@scandlines.com</a>
+Subject: Projektopstart</p>
+<p>Hej Ole,</p>
+<p>Lige en ganske kort status.</p>
+<p>Vi har et internt møde tirsdag hvor jeg forventer de sidste punkter ift. ServiceNow og timingen af jeres opgradering bliver afklaret.</p>
+<p>Umiddelbart herefter vil jeg have en projektplan klar til dig.</p>
+<p>Hvis du har nogle spørgsmål er du velkommen til at tage fat i mig, ellers hører du fra mig i starten af næste uge.</p>
+<p>Venlig hilsen / Best regards</p>
+<p>Tim Unnerup Husum
+Project Manager</p>
+<h3 id="recognoscering"><a href="#recognoscering" aria-hidden="true"><span class="icon icon-link"></span></a>Recognoscering</h3>
+<p>HER MANGLER ET AFSLUTTENDE P-TAG - GÆLDER OGSÅ I PROD!!!
+Email script <code>incident_additional_details</code>:</p>
+<pre><code>template.print('&#x3C;p>' + gs.getMessage('Caller') + ': ${caller_id}&#x3C;br/>');
+template.print('&#x3C;p>' + gs.getMessage('Category') + ': ${category}&#x3C;/p>');
+template.print('&#x3C;p>' + gs.getMessage('Severity') + ': ${severity}&#x3C;/p>');
+template.print('&#x3C;p>' + gs.getMessage('Priority') + ': ${priority}&#x3C;/p>');
+template.print('&#x3C;p>' + gs.getMessage('Comments') + ': ${comments}&#x3C;/p>');
+</code></pre>
+<p>Af disse er det kun "Comments", der findes som direkte key i messages-oversættelsestabellen. Mens "Category" findes som "category". Resten mangler. Kan det stoppe scriptet?</p>
+<p>Notification <code>incident_additional_details</code> har ingen email template.</p>
+<h5 id="preview-test"><a href="#preview-test" aria-hidden="true"><span class="icon icon-link"></span></a>Preview test</h5>
+<p><code>ìncident_body_header</code> viser det, den skal.</p>
+<p>Assigned to, Caller og number fungerer fint i preview af INC0023274.</p>
+<p>Take me to the incident leder til det rigtige sted.</p>
+<p><a href="https://community.servicenow.com/community?id=community_question&#x26;sys_id=5c004feddb58dbc01dcaf3231f9619c3" target="_blank" rel="nofollow noopener noreferrer">https://community.servicenow.com/community?id=community_question&#x26;sys_id=5c004feddb58dbc01dcaf3231f9619c3</a></p>
+<blockquote>
+<p>any contents in "Message HTML" or "Message text" will override the template.</p>
+</blockquote>
+<p>Mailen trigges af eventet <code>sla.warning.breach</code>, som kører fra <code>task_sla</code>-tabellen. Kan tabelskiftet spille en rolle her?</p>
+<p><code>sla.warning.breach</code> trigger også notificationen "SLA breached", som knytter sig til <code>task_sla</code>-tabellen.</p>
+<h3 id="eksempel-fra-prod"><a href="#eksempel-fra-prod" aria-hidden="true"><span class="icon icon-link"></span></a>Eksempel fra prod</h3>
+<p><a href="https://scandlines.service-now.com/nav_to.do?uri=%2Fsys_email.do%3Fsys_id%3D206317e0db5793809c2af5b31d961989%26sysparm_record_target%3Dsys_email%26sysparm_record_row%3D12%26sysparm_record_rows%3D5067%26sysparm_record_list%3DsubjectCONTAINSSLA%255EORDERBYDESCsys_created_on" target="_blank" rel="nofollow noopener noreferrer">https://scandlines.service-now.com/nav_to.do?uri=%2Fsys_email.do%3Fsys_id%3D206317e0db5793809c2af5b31d961989%26sysparm_record_target%3Dsys_email%26sysparm_record_row%3D12%26sysparm_record_rows%3D5067%26sysparm_record_list%3DsubjectCONTAINSSLA%255EORDERBYDESCsys_created_on</a></p>
+<p>Subject: "!!! SLA breach warning. Incident Assigned to:  for . Caller: "</p>
+<p>Body:</p>
+<pre><code>&#x3C;html>&#x3C;head>&#x3C;/head>&#x3C;body>&#x3C;div>Caller: &#x3C;br>Number: &#x3C;br>Assigned to: &#x3C;br>Header: &#x3C;p>&#x3C;font size="6" color="#808080" face="helvetica"> - &#x3C;/font>&#x3C;/p>&#x3C;/div>
+&#x3C;div>&#x3C;p>&#x3C;font size="4" color="#999999" face="helvetica">&#x3C;strong>Additional Details:&#x3C;/strong>&#x3C;/font>&#x3C;/p>&#x3C;font size="3" color="#999999" face="helvetica">&#x3C;p>Caller: &#x3C;br>&#x3C;/p>&#x3C;p>category: &#x3C;/p>&#x3C;p>Severity: &#x3C;/p>&#x3C;p>Priority: &#x3C;/p>&#x3C;p>Comments: &#x3C;/p>&#x3C;/font>&#x3C;/div>
+&#x3C;div>&#x3C;p>&#x3C;font size="3" color="#808080" face="helvetica">You can view all the details of the incident by following the link below:&#x3C;/font>&#x3C;/p>&#x3C;font face="helvetica">&#x3C;a href="task_sla.do?sys_id=8abd3947dbc35f409c2af5b31d96194b&#x26;amp;sysparm_stack=task_sla_list.do?sysparm_query=active=true" style="background-color: #278efc;border: 1px solid #0368d4;color: #ffffff;font-size: 16px;font-family: Helvetica, Arial, sans-serif;text-decoration: none; border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;display: inline-block;padding: 5px;">Take me to the Incident&#x3C;/a>&#x3C;/font>&#x3C;br>&#x3C;br>&#x3C;p>&#x3C;font size="3" color="#808080" face="helvetica">Thank you.&#x3C;br>&#x3C;br>Best regards&#x3C;br>IT HelpDesk&#x3C;/font>&#x3C;/p>&#x3C;/div>&#x3C;div>&#x26;nbsp;&#x3C;/div>&#x3C;div style="display:inline">Ref:MSG0147911&#x3C;/div>&#x3C;/body>&#x3C;/html>
+</code></pre>
+<p>caller_id, assigned_to og number virker hverken i prod/test eller i subject/body.</p>
+<h3 id="seneste-sla-breached-incident-mail-fra-prod"><a href="#seneste-sla-breached-incident-mail-fra-prod" aria-hidden="true"><span class="icon icon-link"></span></a>Seneste SLA breached incident-mail fra prod</h3>
+<p>SLA breached incident - email: 2018-07-11 18:29:34</p>
+<p>Alt mangler.</p>
+<p><img src="C:/Users/jl/Documents/noter/scandlines/Scandlines%20-%20Caller,%20Assigned%20to%20og%20Number%20er%20tomme%20i%20mail/attachments/SLAbreachedPROD.PNG"></p>
+<table>
+<thead>
+<tr>
+<th>Egenskab</th>
+<th>Navn</th>
+<th>Test/prod</th>
+<th>Table</th>
+<th>Parm 1/2 ¤ Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://scandlines.service-now.com/nav_to.do?uri=%2Fsysevent.do%3Fsys_id%3D8e5357e0db5793809c2af5b31d961996" target="_blank" rel="nofollow noopener noreferrer">Event</a></td>
+<td>sla.warning.breach</td>
+<td>Prod</td>
+<td>task_sla</td>
+<td>/ null ¤</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>SLA breached Incident</td>
+<td>Prod</td>
+<td>Incident</td>
+<td>¤ Incident</td>
+</tr>
+</tbody>
+</table>
+<h3 id="seneste-sla-breached-mail-fra-prod"><a href="#seneste-sla-breached-mail-fra-prod" aria-hidden="true"><span class="icon icon-link"></span></a>Seneste SLA breached-mail fra prod</h3>
+<p>SLA breached - email: 2018-07-11 18:29:34</p>
+<p>Subject virker:
+"SLA breach warning. Task Assigned to: Christian Brueckner for INC0023709 "</p>
+<p>Det bygger på dot.walk til task:
+"SLA breach warning. Task Assigned to: ${task.assigned_to} for ${task.number}"</p>
+<p>Resten virker ikke.
+Her er der heller ikke refereret til task.</p>
+<p><img src="C:/Users/jl/Documents/noter/scandlines/Scandlines%20-%20Caller,%20Assigned%20to%20og%20Number%20er%20tomme%20i%20mail/attachments/SLAbreachedPROD.PNG"></p>
+<table>
+<thead>
+<tr>
+<th>Egenskab</th>
+<th>Navn</th>
+<th>Test/prod</th>
+<th>Table</th>
+<th>Parm 1/2 ¤ Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://scandlines.service-now.com/nav_to.do?uri=%2Fsysevent.do%3Fsys_id%3D8e5357e0db5793809c2af5b31d961996" target="_blank" rel="nofollow noopener noreferrer">Event</a></td>
+<td>sla.warning.breach</td>
+<td>Prod</td>
+<td>task_sla</td>
+<td>/ null ¤</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>SLA breached</td>
+<td>Prod</td>
+<td>Task SLA</td>
+<td>¤ Task SLA</td>
+</tr>
+</tbody>
+</table>
+<p>Eventet er det samme på de to notifikationer.</p>
+<h3 id="spørgsmål-til-kim"><a href="#sp%C3%B8rgsm%C3%A5l-til-kim" aria-hidden="true"><span class="icon icon-link"></span></a>Spørgsmål til KIM</h3>
+<ol>
+<li>Hvor bliver eventet <code>sla.warning.breach</code> kastet?</li>
+<li>Hvordan kan jeg lettest kaste eventet i forb. m. test?</li>
+<li>Hvorfor ligger der ingen "SLA breached incident"-mails i test - men kun i prod?</li>
+<li>Hvorfor bruges Incident-tabellen til det her? Det tyder på, at mailen kan fungere, hvis den bygger på task_sla-tabellen.</li>
+<li>Hvor er det, du har skiftet til f.eks. <code>Caller: ${task.caller_id}</code>?</li>
+</ol>
+<h3 id="teracom-kik"><a href="#teracom-kik" aria-hidden="true"><span class="icon icon-link"></span></a>Teracom-kik</h3>
+<p>Her bygger OOB-notifikationen "SLA breached" (uændret) på <code>task_sla</code>-tabellen. F.eks. benyttes <code>SLA breach warning for ${task.number}</code></p>
+<p>Incident-tabellen extender task. Men det gør <code>task_sla</code> ikke!!! Hvorfor virker det så at dot-walke til <code>task.number</code>.</p>
+<h3 id="man-skal-scripte-sig-fra-task_slaover-i-incident"><a href="#man-skal-scripte-sig-fra-task_slaover-i-incident" aria-hidden="true"><span class="icon icon-link"></span></a>Man skal scripte sig fra <code>task_sla</code>over i <code>incident</code></h3>
+<p>Det må være underforstået, at der ikke findes nogen dot-walk vej fra task_sla til incident / eller omvendt.
+<a href="https://community.servicenow.com/community?id=community_question&#x26;sys_id=c5305be5dbdcdbc01dcaf3231f96197c" target="_blank" rel="nofollow noopener noreferrer">https://community.servicenow.com/community?id=community_question&#x26;sys_id=c5305be5dbdcdbc01dcaf3231f96197c</a></p>
+<h3 id="tilbage-melding-til-kim"><a href="#tilbage-melding-til-kim" aria-hidden="true"><span class="icon icon-link"></span></a>Tilbage melding til Kim</h3>
+<p>Har lavet helt ny email notifikation "SLA breached incident", som ligger på trask_sla tabellen. Det vigtigste er, at den kalder det nye email script "sla_breached_incident", som henter alt ind fra incident og sys_journal_field helt custom.</p>
+<p>Har testet fra script baground, hvor det ser ud til at virke. Synes ikke rigtig, det fungerer at teste den her slags med preview notification.</p>
+<p>Kan du strikke en test sammen, der fungerer?</p>
+<h3 id="sådan-kaster-du-et-event-fra-script-background"><a href="#s%C3%A5dan-kaster-du-et-event-fra-script-background" aria-hidden="true"><span class="icon icon-link"></span></a>Sådan kaster du et event fra script background</h3>
+<pre><code>  var incidentGR = new GlideRecord('incident');
+
+    incidentGR.get('number', 'INC0011376');
+
+    incidentGR.query();
+
+    var tempNumber;
+
+    if (incidentGR.next()) {
+
+        tempNumber = incidentGR.number;
+
+        gs.eventQueue('sla.warning.breach', current, tempNumber, gs.getUserID());   
+}
+</code></pre>
+<h3 id="kald-af-mail-scripts"><a href="#kald-af-mail-scripts" aria-hidden="true"><span class="icon icon-link"></span></a>Kald af mail scripts</h3>
+<p><a href="https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/script/server-scripting/reference/r_ExScptEmlNtfn.html" target="_blank" rel="nofollow noopener noreferrer">https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/script/server-scripting/reference/r_ExScptEmlNtfn.html</a></p>
+<p>Skal refereres i html med:
+<code>${mail_script:script name}</code> - vi mangler "mail_script"...</p>
+<p>Dvs. at <code>${sla_breached_incident}</code> måske skal hedde</p>
+<p><code>${mail_script:sla_breached_incident}</code></p>
+<h3 id="nyt-forsøg-efter-ferien"><a href="#nyt-fors%C3%B8g-efter-ferien" aria-hidden="true"><span class="icon icon-link"></span></a>Nyt forsøg efter ferien</h3>
+<pre><code>task_slaId = '00d0c346dba583402903f1c41d9619b1';
+
+incNumber = 'INC0011376';
+
+incSysId = '3189e20adba18f40c7d0f5e51d961914';
+ 
+ var incidentGR = new GlideRecord('incident');
+
+    incidentGR.get(incSysId);
+
+    incidentGR.query();
+
+    var tempNumber;
+
+var tempSysId;
+
+gs.info(incidentGR.getRowCount());
+
+    if (incidentGR.next()) {
+
+tempSysId = incidentGR.number;
+
+        tempNumber = incidentGR.number.getDisplayValue();
+
+gs.info(tempNumber + ' - ' + incSysId);
+
+        gs.eventQueue('sla.warning.breach', task_slaId, tempNumber, gs.getUserID());    
+}
+</code></pre>
+<h3 id="eventet-slawarningbreachkastes-af-workflow-på-task_sla"><a href="#eventet-slawarningbreachkastes-af-workflow-p%C3%A5-task_sla" aria-hidden="true"><span class="icon icon-link"></span></a>Eventet <code>sla.warning.breach</code>kastes af Workflow på <code>task_sla</code></h3>
+<p><a href="https://scandlinestest.service-now.com/workflow_ide.do?sysparm_sys_id=14bdf236cb333100d71cb9c0c24c9c90" target="_blank" rel="nofollow noopener noreferrer">https://scandlinestest.service-now.com/workflow_ide.do?sysparm_sys_id=14bdf236cb333100d71cb9c0c24c9c90</a></p>
+<h3 id="notifikationer"><a href="#notifikationer" aria-hidden="true"><span class="icon icon-link"></span></a>Notifikationer</h3>
+<table>
+<thead>
+<tr>
+<th>Navn</th>
+<th>Tabel</th>
+<th>Triggerevent</th>
+<th>Subject</th>
+<th>Body</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SLA breached Incident (+PROD)</td>
+<td>Incident</td>
+<td>sla.warning.breach</td>
+<td>!!! SLA breach warning. Incident Assigned to: ${assigned_to} for ${number}. Caller: ${caller_id}<br>!!! SLA breach warning. Incident Assigned to:  for . Caller:</td>
+<td>Caller: ${caller_id}<br>Number: ${number}<br>Assigned to: ${assigned_to}<br>Header: ${mail_script:incident_body_header}<br>${mail_script:incident_additional_details}<br>${mail_script:incident_take_me_to_the_incident}<br>Caller: Number: Assigned to: Header: Additional Details: Caller: category: Severity: Priority: Comments:</td>
+</tr>
+<tr>
+<td>SLA breached Incident</td>
+<td>task_sla</td>
+<td>sla.warning.breach</td>
+<td>SLA breach warning. Incident Assigned to: ${task.assigned_to} for ${task.number}<br>SLA breach warning. Incident Assigned to:  for</td>
+<td>${mail_script:sla_breached_incident}<br>TOM MAIL</td>
+</tr>
+<tr>
+<td>SLA breached (+PROD)</td>
+<td>task_sla</td>
+<td>sla.warning.breach</td>
+<td>SLA breach warning. Task Assigned to: ${task.assigned_to} for ${task.number}<br>SLA breach warning. Task Assigned to: Randi Dietz Christensen for INC0024876</td>
+<td>Original breach time: ${original_breach_time}+++++++<br>${mail_script:incident_body_header}<br>+++++++<br>${mail_script:incident_additional_details}<br>+++++++<br>${mail_script:incident_take_me_to_the_incident}<br>+++++++<br>Additional Details: Caller: category: Severity: Priority: Comments:</td>
+</tr>
+<tr>
+<td>SLA warning Incident (+PROD)</td>
+<td>incident</td>
+<td>sla.warning</td>
+<td>! SLA: Assign. to: ${incident.assigned_to}, No. ${incident.number} Caller: ${incident.caller_id}<br>! SLA: Assign. to: , No.  Caller:</td>
+<td>Caller: ${caller_id}<br>Number: ${number}<br>Assigned to: ${assigned_to}<br>Short description: ${short_description}<br>${mail_script:incident_additional_details}<br>${mail_script:incident_take_me_to_the_incident}<br>INGEN AF FELTERNE ER UDFYLDT I PROD</td>
+</tr>
+<tr>
+<td>SLA warning  (+PROD)</td>
+<td>task_sla</td>
+<td>sla.warning</td>
+<td>SLA warning for ${task.number}<br>SLA warning for INC0024876</td>
+<td>SLA warning for ${task.number}<br>${mail_script:incident_take_me_to_the_incident}Created: ${sys_created_on}<br>SER UD TIL AT VIRKE I PROD</td>
+</tr>
+</tbody>
+</table>
+<pre><code>task_slaId = '00d0c346dba583402903f1c41d9619b1';
+
+var task_slaGR = new GlideRecord('task_sla');
+
+    task_slaGR.get(task_slaId);
+
+    task_slaGR.query();
+
+   if (task_slaGR.next()) {
+
+tempId = task_slaGR.task;
+
+        tempNumber = task_slaGR.task.getDisplayValue();
+}
+
+gs.info('task_sla antal: ' + task_slaGR.getRowCount() + ' tempNumber: ' + tempNumber + ' tempId: ' + tempId);
+
+ var incidentGR = new GlideRecord('incident');
+
+    incidentGR.get(tempId);
+
+    incidentGR.query();
+
+    var tempNumber;
+
+var tempSysId;
+
+gs.info(incidentGR.getRowCount());
+
+    if (incidentGR.next()) {
+
+tempSysId = incidentGR.sys_id;
+
+        tempNumber = incidentGR.number;
+
+gs.info(tempNumber + ' - ' + tempSysId);
+
+/* Der SKAL stå current i stedet for task_slaId - ellers kører notifikationen ikke */
+        gs.eventQueue('sla.warning.breach', current, tempNumber, gs.getUserID());   
+}
+</code></pre>
+<h3 id="task_slagr-objektet-skal-sendes-med-inde-fra-loopet"><a href="#task_slagr-objektet-skal-sendes-med-inde-fra-loopet" aria-hidden="true"><span class="icon icon-link"></span></a><code>task_slaGR</code>-objektet skal sendes med inde fra loopet!!!</h3>
+<p>DEN HER VIRKER!!!</p>
+<pre><code>task_slaId = '0022d11edb71c780c7d0f5e51d96197b';
+
+    var tempNumber;
+
+    var tempId;
+
+var task_slaGR = new GlideRecord('task_sla');
+
+    task_slaGR.get(task_slaId);
+
+    task_slaGR.query();
+
+   if (task_slaGR.next()) {
+
+tempId = task_slaGR.task;
+
+        tempNumber = task_slaGR.task.getDisplayValue();
+
+gs.eventQueue('sla.warning.breach', task_slaGR, tempNumber, gs.getUserID());    
+}
+
+gs.info('task_sla antal: ' + task_slaGR.getRowCount() + ' tempNumber: ' + tempNumber + ' tempId: ' + tempId);
+
+ var incidentGR = new GlideRecord('incident');
+
+    incidentGR.get(tempId);
+
+    incidentGR.query();
+
+var tempSysId;
+
+gs.info(incidentGR.getRowCount());
+
+    if (incidentGR.next()) {
+
+tempSysId = incidentGR.sys_id;
+
+        tempNumber = incidentGR.number;
+
+gs.info(tempNumber + ' - ' + tempSysId);
+
+}
+</code></pre>
+<p>Forkortet version:</p>
+<pre><code>task_slaId = '0be5ee9fdb920b00c7d0f5e51d9619b9';
+
+    var tempNumber;
+
+    var tempId;
+
+var task_slaGR = new GlideRecord('task_sla');
+
+    task_slaGR.get(task_slaId);
+
+    task_slaGR.query();
+
+   if (task_slaGR.next()) {
+
+tempId = task_slaGR.task;
+
+        tempNumber = task_slaGR.task.getDisplayValue();
+
+gs.eventQueue('sla.warning.breach', task_slaGR, tempNumber, gs.getUserID());    
+}
+</code></pre>
+<h3 id="hente-assigned_to-fra-incident-til-parameter"><a href="#hente-assigned_to-fra-incident-til-parameter" aria-hidden="true"><span class="icon icon-link"></span></a>Hente assigned_to fra Incident til parameter</h3>
+<pre><code>task_slaId = '0be5ee9fdb920b00c7d0f5e51d9619b9';
+
+    var tempNumber;
+
+    var tempId;
+
+var task_slaGR = new GlideRecord('task_sla');
+
+    task_slaGR.get(task_slaId);
+
+    task_slaGR.query();
+
+   if (task_slaGR.next()) {
+
+tempId = task_slaGR.task;
+
+        tempNumber = task_slaGR.task.getDisplayValue();
+
+/* Get assigned_to from Incident as parameter */
+
+var assignedTo;
+
+ var incidentGR = new GlideRecord('incident');
+
+    incidentGR.get(tempId);
+
+    incidentGR.query();
+
+gs.info(incidentGR.getRowCount());
+
+    if (incidentGR.next()) {
+
+assignedTo = incidentGR.assigned_to.getDisplayValue();
+
+        tempNumber = incidentGR.number;
+
+/* gs.info(tempNumber + ' - ' + assignedTo); */
+
+}
+
+gs.eventQueue('sla.warning.breach', task_slaGR, tempNumber, assignedTo);    
+}
+</code></pre>
+<p><code>AssignedTo</code> hentes ind i subject på email notifikationen med <code>SLA breach warning. Task assigned to ${event.parm2} for ${event.parm1}</code> - Ved at bruge udelukkende parametre i subject bliver det lettere at overføre variabler fra workflow-events, hvor jeg er helt sikker på at have kontrol over de to parametre.</p>
+<h3 id="kims-test-23-8-18"><a href="#kims-test-23-8-18" aria-hidden="true"><span class="icon icon-link"></span></a>Kims test 23-8-18</h3>
+<p>Mail 1:
+Subject: ! SLA: Assign. to: , No.  Caller:
+Event: sla.warning
+Notification: SLA warning Incident
+Body: Ingen variabler til stede</p>
+<p>Mail 2:
+Subject: SLA warning for INC0023306
+Event: sla.warning
+Notification: SLA warning
+Body: Ingen variabler til stede</p>
+<p>Mail 3:
+Subject: SLA breach warning. Task Assigned to:  for INC0023306
+Event: sla.warning.breach
+Notification: SLA breached
+Body: Ingen variabler til stede</p>
+<p>Mail 4:
+Subject: !!! SLA breach warning. Incident Assigned to:  for . Caller:
+Event: sla.warning.breach
+Notification: SLA breached Incident
+Body: Variabler til stede men ikke udfyldt</p>
+<p>Se alle fire notifications, som trigges af <code>sla.warning.breach</code> - de tre er fra <code>task_sla</code> - hvorfor kører kun de to - ikke den der starter med <code>[TEST]</code>:
+<a href="https://scandlinestest.service-now.com/nav_to.do?uri=%2Fsysevent_email_action_list.do%3Fsysparm_query%3Devent_nameSTARTSWITHsla.warning.breach%26sysparm_first_row%3D1%26sysparm_view%3D%26sysparm_choice_query_raw%3D%26sysparm_list_header_search%3Dtrue" target="_blank" rel="nofollow noopener noreferrer">https://scandlinestest.service-now.com/nav_to.do?uri=%2Fsysevent_email_action_list.do%3Fsysparm_query%3Devent_nameSTARTSWITHsla.warning.breach%26sysparm_first_row%3D1%26sysparm_view%3D%26sysparm_choice_query_raw%3D%26sysparm_list_header_search%3Dtrue</a></p>
+<h3 id="svar-til-kim-23-8-18"><a href="#svar-til-kim-23-8-18" aria-hidden="true"><span class="icon icon-link"></span></a>Svar til Kim 23-8-18</h3>
+<p>Ja, vi skal have SLA workflow til at gøre det samme som min script background, hvor alle variabler bliver udfyldt i mailen.</p>
+<p>Er det det her workflow på task_sla, som styrer det hele:
+<a href="https://scandlinestest.service-now.com/workflow_ide.do?sysparm_sys_id=14bdf236cb333100d71cb9c0c24c9c90" target="_blank" rel="nofollow noopener noreferrer">https://scandlinestest.service-now.com/workflow_ide.do?sysparm_sys_id=14bdf236cb333100d71cb9c0c24c9c90</a></p>
+<p>Uanset hvad:</p>
+<p>Det korrekte workflow stage (som du nok er den eneste, der kan finde) skal gøre følgende:
+1)	Kastet dette event: sla.warning.breach
+2)	Parm1 = current.task.getDisplayValue()
+3)	Parm2 = </p>
+<p>var incidentGR = new GlideRecord('incident');</p>
+<pre><code>incidentGR.get(current.task);
+
+incidentGR.query();
+
+if (incidentGR.next()) {
+</code></pre>
+<p>var assignedTo = incidentGR.assigned_to.getDisplayValue();</p>
+<p>}</p>
+<p>assignedTo</p>
+</div></div><div id="footer"><p class="home-links"><a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a><a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a></p></div></div></div>
+    <script src="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/app.2dcaf968.js" defer></script><script src="/C:/Users/JanLarsen/Documents/nodejs/gridsome_0_7_7/snowheadless/dist/assets/js/page--src-templates-note-vue.fc9d622f.js" defer></script>
+  </body>
+</html>
